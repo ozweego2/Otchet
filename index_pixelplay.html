@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PixelPlay — игровое пространство</title>
+<style>
+:root{--bg:#0b0b16;--panel:#15152a;--text:#f4f3ff;--muted:#b6b4ce;--accent:#9b7bff;--accent2:#54d6ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}.nav{position:sticky;top:0;z-index:10;background:#0b0b16eF;backdrop-filter:blur(12px);border-bottom:1px solid #292943}
+.nav-inner{max-width:1100px;margin:auto;padding:16px 22px;display:flex;justify-content:space-between;align-items:center;gap:18px}.logo{font-weight:800;font-size:1.3rem;color:var(--accent2)}.links{display:flex;gap:20px;flex-wrap:wrap;font-size:.95rem}.links a:hover{color:var(--accent2)}
+section{padding:78px 22px}.wrap{max-width:1100px;margin:auto}.hero{min-height:78vh;display:flex;align-items:center;background:radial-gradient(circle at 80% 30%,#49308a66,transparent 35%),radial-gradient(circle at 20% 80%,#126b8960,transparent 35%)}
+.kicker{color:var(--accent2);text-transform:uppercase;letter-spacing:3px;font-size:.8rem;font-weight:bold}h1{font-size:clamp(2.6rem,7vw,5.2rem);line-height:1.04;margin:16px 0}h2{font-size:clamp(1.8rem,4vw,2.8rem);margin:0 0 20px}p{color:var(--muted)}.hero p{max-width:650px;font-size:1.15rem}.btn{display:inline-block;margin-top:16px;padding:13px 22px;border-radius:12px;background:linear-gradient(100deg,var(--accent),#6c9dff);font-weight:bold;box-shadow:0 8px 25px #755cff44;transition:transform .2s,box-shadow .2s}.btn:hover{transform:translateY(-3px);box-shadow:0 12px 30px #755cff66}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.card{background:var(--panel);border:1px solid #2b2b48;border-radius:18px;padding:24px;transition:transform .2s,border-color .2s}.card:hover{transform:translateY(-5px);border-color:var(--accent)}.emoji{font-size:2rem}.tag{display:inline-block;background:#292348;color:#c9baff;padding:4px 10px;border-radius:30px;font-size:.8rem}.features{background:#101020}.contact{background:linear-gradient(120deg,#211943,#101020)}footer{text-align:center;padding:28px;color:#9694b0;border-top:1px solid #292943}
+@media(max-width:700px){.nav-inner{align-items:flex-start;flex-direction:column}.links{gap:12px}.grid{grid-template-columns:1fr}section{padding:58px 18px}.hero{min-height:70vh}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="nav-inner"><a class="logo" href="#home">PIXELPLAY</a><nav class="links"><a href="#about">О проекте</a><a href="#features">Преимущества</a><a href="#games">Игры</a><a href="#contact">Контакты</a></nav></div></header>
+<main>
+<section class="hero" id="home"><div class="wrap"><div class="kicker">Играй. Исследуй. Создавай.</div><h1>Твоя следующая<br>игровая история.</h1><p>PixelPlay — пространство для тех, кто ищет новые миры, яркие впечатления и игры, к которым хочется возвращаться.</p><a class="btn" href="#games">Открыть каталог ↓</a></div></section>
+<section id="about"><div class="wrap"><div class="kicker">Кто мы</div><h2>Больше, чем просто игры</h2><p>Мы собираем интересные игровые идеи в одном месте и помогаем игрокам находить проекты под своё настроение: от динамичных приключений до спокойного исследования новых миров.</p></div></section>
+<section class="features" id="features"><div class="wrap"><div class="kicker">Почему PixelPlay</div><h2>Создано для игроков</h2><div class="grid"><article class="card"><div class="emoji">⚡</div><h3>Быстрый выбор</h3><p>Удобные карточки помогают быстро ознакомиться с игровыми направлениями.</p></article><article class="card"><div class="emoji">🎮</div><h3>Разные жанры</h3><p>Приключения, стратегии и фантастические миры — выбирай свой стиль.</p></article><article class="card"><div class="emoji">✨</div><h3>Новые впечатления</h3><p>Открывай новые идеи и добавляй интересные проекты в свой список.</p></article></div></div></section>
+<section id="games"><div class="wrap"><div class="kicker">Подборка</div><h2>Выбери свой мир</h2><div class="grid"><article class="card"><div class="emoji">🌌</div><span class="tag">Приключение</span><h3>Neon Horizon</h3><p>Исследуй футуристический город и раскрой его секреты.</p></article><article class="card"><div class="emoji">🛡️</div><span class="tag">Стратегия</span><h3>Kingdoms Awake</h3><p>Построй своё королевство и принимай решения, меняющие ход истории.</p></article><article class="card"><div class="emoji">🚀</div><span class="tag">Исследование</span><h3>Beyond Orbit</h3><p>Отправляйся к далёким планетам и изучай неизведанные системы.</p></article></div></div></section>
+<section class="contact" id="contact"><div class="wrap"><div class="kicker">На связи</div><h2>Начни своё приключение</h2><p>Это демонстрационный учебный проект. Здесь можно разместить ссылки на сообщество, новости и обратную связь.</p><a class="btn" href="mailto:hello@pixelplay.example">Связаться с нами</a></div></section>
+</main><footer>© 2026 PixelPlay · Учебный проект</footer>
+</body></html>
